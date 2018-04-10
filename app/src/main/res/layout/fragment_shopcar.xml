@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_grey">
+
+        <TextView
+            style="@style/TextViewTitle"
+            android:layout_centerInParent="true"
+            android:text="购物车" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_more" />
+
+    </RelativeLayout>
+
+    <com.baishan.nearshop.ui.view.RefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/RecycleViewCommon"
+         />
+    </com.baishan.nearshop.ui.view.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/llResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cbAll"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全选" />
+
+        <TextView
+            style="@style/TextViewBody"
+            android:text="合计：￥" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            style="@style/TextViewBody"
+            android:text="0.00"
+            android:textColor="@color/font_red" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            style="@style/BtnRed"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="去结算" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_grey">
+
+        <ImageView
+            android:id="@+id/titlebar_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_left" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/font_red"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="?android:attr/textAppearanceMedium"
+            app:tabTextColor="@color/font_grey" />
+
+        <RelativeLayout
+            android:id="@+id/relMessage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                style="@style/TextViewCaption"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_message_grey" />
+
+            <View
+                android:id="@+id/vHasMsg"
+                style="@style/TextNum"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

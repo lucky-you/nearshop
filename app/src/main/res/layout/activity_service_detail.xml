@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshop.ui.activity.ServiceDetailActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+
+    <com.baishan.nearshop.ui.view.DragLayout
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <include layout="@layout/layout_service_desc"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <include layout="@layout/layout_goods_pic"/>
+        </FrameLayout>
+
+    </com.baishan.nearshop.ui.view.DragLayout>
+
+
+</LinearLayout>

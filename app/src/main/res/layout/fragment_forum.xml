@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relChatRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivPic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/tvChatRoom"
+                style="@style/TextViewBody"
+                android:layout_toRightOf="@+id/ivPic"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvNum"
+                style="@style/TextViewCaption"
+                android:layout_below="@+id/tvChatRoom"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/ivPic"
+                android:drawableLeft="@drawable/ic_chat_num"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/lineSolid" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_below="@+id/relChatRoom"-->
+    <!--android:id="@+id/llTabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#FFBE2C"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnHot"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_tab_yellow"-->
+    <!--android:text="热门" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnMarket"-->
+    <!--style="@style/BtnTabYellow"-->
+    <!--android:text="跳蚤市场" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnFind"-->
+    <!--style="@style/BtnTabYellow"-->
+    <!--android:text="失物寻找" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnFriend"-->
+    <!--style="@style/BtnTabYellow"-->
+    <!--android:text="相亲交友" />-->
+    <!--</LinearLayout>-->
+
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/llTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relChatRoom"
+        app:tabIndicatorColor="@color/btn_red" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTabs"></android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_forum_publish" />
+</RelativeLayout>

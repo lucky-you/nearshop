@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/ivPic"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/ivPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/goods_name"
+                style="@style/TextViewBody"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/ivPic"
+                android:layout_toRightOf="@+id/ivPic"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="阿是阿阿斯达阿加莎的阿是阿阿斯达阿加莎的阿是阿阿斯达阿加莎的"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSpec"
+                style="@style/TextViewCaption"
+                android:layout_below="@+id/goods_name"
+                android:layout_toRightOf="@+id/ivPic"
+                android:text="规格"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvPrice"
+                style="@style/TextViewCaption"
+                android:layout_below="@+id/goods_name"
+                android:layout_toRightOf="@+id/ivPic"
+                android:text="x10"
+                android:textColor="@color/font_grey" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSelect"
+        style="@style/TextViewBody"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_btn_round_red"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:gravity="center"
+        android:text="选供货商"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvStoreName"
+        style="@style/TextViewCaption"
+        android:layout_alignParentRight="true"
+        android:text="无货"
+        android:gravity="center"
+        android:textColor="@color/font_red"
+        android:visibility="gone" />
+
+</LinearLayout>

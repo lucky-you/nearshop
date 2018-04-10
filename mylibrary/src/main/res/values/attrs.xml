@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference" />
+        <attr name="cancelButtonBackground" format="color|reference" />
+        <attr name="otherButtonTopBackground" format="color|reference" />
+        <attr name="otherButtonMiddleBackground" format="color|reference" />
+        <attr name="otherButtonBottomBackground" format="color|reference" />
+        <attr name="otherButtonSingleBackground" format="color|reference" />
+        <attr name="cancelButtonTextColor" format="color|reference" />
+        <attr name="otherButtonTextColor" format="color|reference" />
+        <attr name="actionSheetPadding" format="dimension|reference" />
+        <attr name="otherButtonSpacing" format="dimension|reference" />
+        <attr name="cancelButtonMarginTop" format="dimension|reference" />
+        <attr name="actionSheetTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+
+</resources>

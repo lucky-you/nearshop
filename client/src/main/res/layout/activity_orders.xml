@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshopclient.ui.activity.OrdersActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextViewCaption"
+            android:background="@drawable/shape_stroke_edit"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="请输入订单号、地址或收货人姓名、电话" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            style="@style/TextViewBodyGrey"
+            android:layout_marginLeft="10dp"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/font_red"
+        app:tabSelectedTextColor="@color/font_red" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

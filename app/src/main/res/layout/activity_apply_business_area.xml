@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshop.ui.activity.ApplyBusinessAreaActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextViewSubhead"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="商区申请" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="商区名称　　" />
+
+                    <EditText
+                        android:id="@+id/etBusinessName"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您想入驻的商区名称"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="所属省市县　" />
+
+                    <TextView
+                        android:id="@+id/tvArea"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="请选择您的商区所属区域"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="详细地址　　" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您的详细联系地址"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    style="@style/TextViewSubhead"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="个人信息填写" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="联系人姓名　" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您的姓名"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="身份证号码　" />
+
+                    <EditText
+                        android:id="@+id/etIdCard"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您的身份证号码"
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="手机号码　　" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:hint="请输入您的手机号码"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="固定电话　　" />
+
+                    <EditText
+                        android:id="@+id/etFixPhone"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:hint="请输入您的固定电话"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextViewBody"
+                        android:layout_centerVertical="true"
+                        android:text="常用邮箱　　" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        style="@style/TextViewBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您的常用邮箱"
+                        android:padding="2dp"
+                        android:inputType="textEmailAddress"
+                        android:src="@drawable/ic_arrow_right" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextViewSubhead"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="证件上传" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivCardFront"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/image_loading" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewBody"
+                            android:layout_centerVertical="true"
+                            android:text="身份证正面照" />
+
+                        <TextView
+                            style="@style/TextViewCaption"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="2dp"
+                            android:text="请上传清晰的照片" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btnUploadFront"
+                                android:layout_width="60dp"
+                                android:layout_height="25dp"
+                                style="@style/BtnRed"
+                                android:text="上传"
+                                android:layout_alignParentBottom="true"
+                                />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/btnUploadFront"
+                                style="@style/TextViewCaption"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="2dp"
+                                android:layout_alignParentBottom="true"
+                                android:text="格式：jpg或png" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivCardBackground"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/image_loading" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewBody"
+                            android:layout_centerVertical="true"
+                            android:text="身份证背面照" />
+
+                        <TextView
+                            style="@style/TextViewCaption"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="2dp"
+                            android:text="请上传清晰的照片" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btnUploadBackground"
+                                android:layout_width="60dp"
+                                android:layout_height="25dp"
+                                style="@style/BtnRed"
+                                android:text="上传"
+                                android:layout_alignParentBottom="true"
+                                />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/btnUploadBackground"
+                                style="@style/TextViewCaption"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="2dp"
+                                android:layout_alignParentBottom="true"
+                                android:text="格式：jpg或png" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivLicense"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/image_loading" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewBody"
+                            android:layout_centerVertical="true"
+                            android:text="营业执照" />
+
+                        <TextView
+                            style="@style/TextViewCaption"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="2dp"
+                            android:text="请上传清晰的营业执照样本" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btnLicense"
+                                android:layout_width="60dp"
+                                android:layout_height="25dp"
+                                style="@style/BtnRed"
+                                android:text="上传"
+                                android:layout_alignParentBottom="true"
+                                />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/btnLicense"
+                                style="@style/TextViewCaption"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="2dp"
+                                android:layout_alignParentBottom="true"
+                                android:text="格式：jpg或png" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/bg_grey" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                style="@style/BtnRed"
+                android:text="提交"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

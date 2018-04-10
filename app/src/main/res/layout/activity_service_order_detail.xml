@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshop.ui.activity.ServiceOrderDetailActivity">
+    |
+
+    <include layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_orders_address" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_grey" />
+
+            <include layout="@layout/layout_orders_info" />
+
+            <include layout="@layout/layout_courier_info" />
+
+
+            <include layout="@layout/item_easy_order" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_grey" />
+
+            <LinearLayout
+                android:id="@+id/llPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/order_info"
+                    android:textColor="@color/font_black"
+                    android:textSize="12sp" />
+
+                <View style="@style/lineSolid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/TextViewCaption"
+                        android:text="支付金额：" />
+
+                    <EditText
+                        android:id="@+id/etMoney"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_stroke_edit"
+                        android:inputType="numberDecimal"
+                        android:padding="2dp"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/TextViewCaption"
+                        android:layout_marginLeft="5dp"
+                        android:text="元" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewCaption"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="支付方式：" />
+
+                <RadioGroup
+                    android:id="@+id/rgPayType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbBalPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="余额支付" />
+
+                    <RadioButton
+                        android:id="@+id/rbAlipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝支付" />
+
+                    <RadioButton
+                        android:id="@+id/rbWxPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPayInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="支付信息"
+                    android:textColor="@color/font_black"
+                    android:textSize="12sp" />
+
+                <View style="@style/lineSolid" />
+
+                <TextView
+                    android:id="@+id/tvPayType"
+                    style="@style/TextViewCaption"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/order_pay_type" />
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    style="@style/TextViewCaption"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_pay_money" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="90dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/shape_bg_grey"
+            android:text="申请退款"
+            android:textColor="@color/font_black"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRight"
+            style="@style/BtnRed"
+            android:layout_width="90dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="确认支付"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

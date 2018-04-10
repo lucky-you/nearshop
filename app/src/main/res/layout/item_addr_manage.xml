@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llArea"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:textColor="@color/font_grey"
+            android:text=""
+            style="@style/TextViewBody" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            style="@style/CustomCheckboxTheme"
+            android:id="@+id/cbDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认地址"
+            android:textColor="@color/font_black"
+            />
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_toLeftOf="@+id/tvDelete"
+            android:text="编辑"
+            android:textColor="@color/font_pink"
+            style="@style/TextViewCaption" />
+        <TextView
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/tvDelete"
+            android:layout_marginLeft="10dp"
+            android:text="删除"
+            android:textColor="@color/font_pink"
+            style="@style/TextViewCaption" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/lineSolid"/>
+
+
+
+</LinearLayout>

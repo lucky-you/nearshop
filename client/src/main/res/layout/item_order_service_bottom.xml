@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llServiceBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/TextViewBodyGrey"
+        android:background="@drawable/shape_stroke_grey"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text="拒绝此单"
+        android:textColor="@color/btn_yellow" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/TextViewBodyGrey"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape_stroke_grey"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:text="联系用户"
+        android:textColor="@color/btn_yellow" />
+
+
+</LinearLayout>

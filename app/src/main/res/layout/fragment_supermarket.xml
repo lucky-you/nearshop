@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_market_service"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tab"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:tabMinWidth="50dp"
+            app:tabIndicatorColor="@color/font_red"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/font_red"
+            app:tabTextColor="@color/colorGray" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@color/font_grey_light" />
+
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_down" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/RecycleViewCommon"
+            android:background="#efff"
+            android:padding="20dp"
+            android:visibility="invisible" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+        <CheckBox
+            style="@style/CustomCheckboxTheme"
+            android:id="@+id/cbArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tvArea"
+            android:text=""
+            style="@style/TextViewBody" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:textColor="@color/font_grey"
+            android:text="洪福添美广场9东一单元"
+            style="@style/TextViewBody" />
+
+        <!--<TextView
+            android:id="@+id/tvUserInfo"
+            android:text=""
+            style="@style/TextViewCaption" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvUpdate"
+            android:text="修改当前地址"
+          style="@style/TextViewCaption" />
+        <TextView
+            android:id="@+id/tvSelectOther"
+            android:layout_marginLeft="10dp"
+            android:text="选择其他地址"
+          style="@style/TextViewCaption" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baishan.nearshop.ui.view.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextViewBody"
+                android:text="" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDesc"
+                style="@style/TextViewBody"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/font_red" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvPrice"
+                style="@style/TextViewTitle"
+                android:layout_below="@+id/tvDesc"
+                android:text=""
+                android:textColor="@color/font_grey" />
+
+            <Button
+                android:id="@+id/btnOrder"
+                style="@style/BtnRed"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="我要预约" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_grey" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:text="商家信息"
+                android:textColor="@color/font_grey" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextViewBody"
+                    android:text=""
+                    android:textColor="@color/font_grey" />
+
+                <TextView
+                    android:id="@+id/tvDeposit"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    style="@style/TextViewCaption"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View style="@style/lineSolid" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvIntroTip"
+                style="@style/TextViewSubhead"
+                android:layout_marginRight="10dp"
+                android:text="商家简介"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvStoreDesc"
+                style="@style/TextViewBody"
+                android:text=""
+                android:textColor="@color/font_grey" />
+
+        </LinearLayout>
+
+        <View style="@style/lineSolid" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextViewSubhead"
+                android:text="联系电话"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/TextViewBody"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/font_grey_dark" />
+
+        </RelativeLayout>
+
+        <View style="@style/lineSolid" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                style="@style/TextViewSubhead"
+                android:layout_width="0dp"
+                android:text="认证资料"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:id="@+id/tvLicense"
+                style="@style/TextViewBody"
+                android:layout_marginLeft="15dp"
+                android:background="#32B9AA"
+                android:padding="2dp"
+                android:text="执照"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_body" />
+
+            <TextView
+                android:id="@+id/tvIdentity"
+                style="@style/TextViewBody"
+                android:layout_marginLeft="10dp"
+                android:background="@color/btn_red"
+                android:padding="2dp"
+                android:text="身份"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_body" />
+        </LinearLayout>
+
+        <View style="@style/lineSolid" />
+
+        <HorizontalScrollView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/llPicContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View style="@style/lineSolid" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/llDesc"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextViewSubhead"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:text="服务简介"
+                android:textColor="@color/font_grey" />
+
+            <View style="@style/lineSolid" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvServiceDesc"
+                style="@style/TextViewBody"
+                android:layout_marginLeft="10dp"
+                android:text="" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_grey" />
+
+
+        <TextView
+            style="@style/TextViewSubhead"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:text="图文详情"
+            android:textColor="@color/font_grey" />
+
+        <View style="@style/lineSolid" />
+    </LinearLayout>
+</com.baishan.nearshop.ui.view.CustScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <com.baishan.nearshop.ui.view.RefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/RecycleViewCommon" />
+
+    </com.baishan.nearshop.ui.view.RefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+          android:id="@+id/tvCompany"
+            style="@style/TextViewSubhead"
+            android:text="武汉新世纪搬家公司"
+            android:textColor="@color/font_grey_dark" />
+
+        <TextView
+            android:id="@+id/tvLicense"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="10dp"
+            android:background="#32B9AA"
+            android:padding="2dp"
+            android:text="执照"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_caption" />
+
+        <TextView
+            android:id="@+id/tvIdentity"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="5dp"
+            android:background="@color/btn_red"
+            android:padding="2dp"
+            android:text="身份"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_caption" />
+
+        <TextView
+            android:id="@+id/tvDeposit"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            style="@style/TextViewCaption"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/TextViewBody"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="武汉新世纪搬家公司快速搬家搬家搬家" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/TextViewBody"
+                    android:text="￥4.6起"
+                    android:textColor="@color/colorGray"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    style="@style/BtnRed"
+                    android:text="我要预约"
+                    android:layout_width="65dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

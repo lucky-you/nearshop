@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+
+    <!--base size-->
+    <dimen name="txtsize_headline">24sp</dimen>
+    <dimen name="txtsize_title">18sp</dimen>
+    <dimen name="txtsize_subhead">17sp</dimen>
+    <dimen name="txtsize_body">15sp</dimen>
+    <dimen name="txtsize_caption">13sp</dimen>
+    <dimen name="txtsize_small">10sp</dimen>
+    <dimen name="txtsize_number_big">35dp</dimen>
+    <!--base size-->
+
+</resources>

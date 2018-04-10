@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_orders_business" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_grey"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="15.0dip">
+
+        <ImageView
+            android:id="@+id/goods_img"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/goods_img"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/goods_price"
+            android:layout_toRightOf="@+id/goods_img"
+            android:minHeight="70.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip">
+
+            <TextView
+                android:id="@+id/goods_attr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:paddingTop="4.0dip"
+                android:text="武汉顶级家政公司"
+                android:textColor="@color/btn_yellow"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="2"
+                android:text="的厮杀打开卡是的借口借口说"
+                android:textColor="@color/font_black"
+                android:textSize="11.0sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/goods_img"
+            android:includeFontPadding="false"
+            android:text="￥22.50"
+            android:textColor="@color/font_black"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAuto"
+        style="@style/TextViewBody"
+        android:layout_gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/orders_auto"
+        android:textSize="@dimen/txtsize_caption"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPriceDesc"
+        style="@style/TextViewBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="@string/orders_pay_desc"
+        android:textSize="@dimen/txtsize_caption" />
+
+    <View style="@style/lineSolid" />
+
+    <LinearLayout
+        android:id="@+id/llOperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnLeft"
+            style="@style/BtnWhite"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:text="取消订单"
+            android:textSize="@dimen/txtsize_caption"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRight"
+            style="@style/BtnWhite"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:text="付款"
+            android:textSize="@dimen/txtsize_caption" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_grey" />
+</LinearLayout>

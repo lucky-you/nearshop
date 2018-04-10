@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/title_grey"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvLocation"
+        style="@style/TextViewCaption"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableTop="@drawable/ic_location"
+        android:text="武汉"
+        android:textColor="@color/font_black" />
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:id="@+id/llSearch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_round_white"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            style="@style/TextViewBody"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="有身边 够了"
+            android:textColor="#d6d5d5" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_grey" />
+
+        <ImageView
+            android:id="@+id/ivScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_qrcode_scan" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_message"/>
+
+
+</LinearLayout>

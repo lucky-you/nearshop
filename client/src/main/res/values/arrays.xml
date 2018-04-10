@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="order_goods_sender">
+        <item>抢单</item>
+        <item>待处理</item>
+        <item>进行中</item>
+        <item>已完成</item>
+        <item>已取消</item>
+    </string-array>
+
+    <string-array name="order_goods_business">
+        <item>待处理</item>
+        <item>已确认</item>
+        <item>退款</item>
+        <item>退款确认</item>
+    </string-array>
+
+    <string-array name="order_goods_admin">
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="order_service_sender">
+        <item>抢单</item>
+        <item>待处理</item>
+        <item>已接单</item>
+        <item>工作中</item>
+        <item>已完成</item>
+    </string-array>
+
+</resources>

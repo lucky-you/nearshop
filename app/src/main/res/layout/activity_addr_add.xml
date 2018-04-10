@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_titlebar"
+        android:layout_marginTop="8.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_business"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:minHeight="44.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前商区"
+                    android:textColor="@color/font_grey_dark"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/tvCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/font_black"
+                    android:textSize="14.0sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="切换商区"
+                    android:textColor="@color/font_grey_dark"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/lineSolid"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:minHeight="44.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货人姓名"
+                    android:textColor="@color/font_grey_dark"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/consigneeEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@null"
+                    android:hint="请输入收货人姓名"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColorHint="#ffa3a3a2"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/lineSolid"
+                android:layout_marginLeft="15.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:minHeight="44.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textColor="@color/font_grey_dark"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/telEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@null"
+                    android:hint="请输入手机号码"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColorHint="#ffa3a3a2"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/lineSolid"
+                android:layout_marginLeft="15.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:minHeight="44.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前城市"
+                    android:textColor="@color/font_black"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tvCurrentAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/font_black"
+                    android:textSize="14.0sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/lineSolid"
+                android:layout_marginLeft="15.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:minHeight="44.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址"
+                    android:textColor="@color/font_grey_dark"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:maxLength="20"
+                    android:id="@+id/etDetail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@null"
+                    android:hint="请输入详细地址"
+                    android:singleLine="true"
+                    android:textColorHint="#ffa3a3a2"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/lineSolid"
+                android:layout_marginLeft="15.0dip" />
+
+
+            <View style="@style/lineSolid" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/BtnRed"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="保存" />
+</RelativeLayout>

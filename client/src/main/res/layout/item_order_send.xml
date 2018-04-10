@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewCaption"
+            android:text="订单编号："
+            android:textColor="@color/font_red" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextViewCaption"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="15dp"
+            android:text="姓名：马文超" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/TextViewCaption"
+            android:layout_below="@+id/tvName"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="5dp"
+            android:text="地址：武汉司" />
+
+        <LinearLayout
+            android:id="@+id/llAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvSend"
+                style="@style/TextViewBody"
+                android:background="@drawable/shape_btn_round_red"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="派送此单"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvIgnore"
+                style="@style/TextViewBody"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_btn_round_grey"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="忽略此单"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvSendState"
+                style="@style/TextViewCaption"
+                android:gravity="center"
+                android:text="配送中"
+                android:textColor="@color/font_red" />
+
+            <TextView
+                android:id="@+id/tvStateDesc"
+                style="@style/TextViewCaption"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="已自动确认"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSended"
+                style="@style/TextViewCaption"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_btn_round_red"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="我已送达"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View style="@style/lineSolid" />
+
+
+</LinearLayout>

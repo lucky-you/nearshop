@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请您写下宝贵的建议，这将帮助我们更好的完善产品。"
+            android:maxLength="300"
+            android:padding="10dp"
+            android:textSize="@dimen/txtsize_body" />
+
+        <TextView
+            android:id="@+id/wordNumber"
+            style="@style/TextViewCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:text="300字以内" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/BtnRed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="提交反馈" />
+
+</LinearLayout>

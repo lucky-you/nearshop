@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baishan.nearshopclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.WithdrawActivity" />
+        <activity android:name=".ui.activity.OrdersActivity" />
+        <activity android:name=".ui.activity.MyGoodsActivity" />
+        <activity android:name=".ui.activity.MyMessageActivity" />
+        <activity android:name=".ui.activity.GoodsDetailActivity" />
+        <activity android:name=".ui.activity.GoodsOrdersDetailActivity" />
+        <activity android:name=".ui.activity.SearchOrdersActivity" />
+        <activity android:name=".ui.activity.ServiceOrderDetailActivity" />
+        <activity android:name=".ui.activity.WithdrawLogActivity" />
+
+        <service android:name=".service.PushIntentService" />
+        <service
+            android:name=".service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"></service>
+
+        <activity android:name=".ui.activity.ClearingBalanceActivity"></activity>
+    </application>
+
+</manifest>

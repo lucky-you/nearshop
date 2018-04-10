@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\workspace_studio\\nearshop\\nearshop\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "E:\\workspace_studio\\nearshop\\nearshop\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "E:\\my_project\\nearshop\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "E:\\my_project\\nearshop\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\color-v23\\abc_color_highlight_material.xml"
+    }
+]

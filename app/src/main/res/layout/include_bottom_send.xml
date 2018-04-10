@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rlPic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/btnImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/btn_add_send_pic" />
+
+            <ImageView
+                android:id="@+id/ivRedDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_red_dot"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnEmotion"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_add_send_smiley_p" />
+
+        <EditText
+            android:maxLength="250"
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="说点什么吧..."
+            android:minHeight="30dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:maxLines="5"
+            android:textSize="@dimen/txtsize_body" />
+
+        <TextView
+            android:id="@+id/tvSend"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="5dp"
+            android:text="发送"
+            android:textColor="@color/font_grey" />
+
+    </LinearLayout>
+
+    <com.baishan.nearshop.ui.view.EmotionView
+        android:id="@+id/emotionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:text="配送区域" />
+
+            <TextView
+                style="@style/TextViewCaption"
+                android:layout_marginLeft="5dp"
+                android:text="(配送地可能会影响库存，请正确选择)" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/TextViewBody"
+                android:layout_toRightOf="@+id/ivLocation"
+                android:text="请选择配送区域"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:id="@+id/tvAddressDetail"
+                style="@style/TextViewCaption"
+                android:layout_below="@+id/tvAddress"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivLocation"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/lineSolid" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llSpec"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:text="商品规格" />
+
+            <com.baishan.mylibrary.view.flowlayout.TagFlowLayout
+                android:id="@+id/tags"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View style="@style/lineSolid" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvNumDesc"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="购买数量" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/bg_grey"
+                android:text="—"
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:maxLines="1"
+                android:id="@+id/tvNum"
+                style="@style/TextViewTitle"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/bg_grey"
+                android:text="＋"
+                android:textColor="@color/font_grey" />
+
+        </LinearLayout>
+
+        <View style="@style/lineSolid" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:text="总计："
+                android:textColor="@color/font_grey" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/TextViewBody"
+                android:text="￥58.80"
+                android:textColor="@color/font_red" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRemark"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:text="备注信息" />
+
+            <EditText
+                android:id="@+id/etDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_stroke_edit"
+                android:gravity="left"
+                android:maxLines="3"
+                android:minLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/btn_red"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

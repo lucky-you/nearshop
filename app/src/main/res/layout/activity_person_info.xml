@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshop.ui.activity.PersonInfoActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/relAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TextViewBody"
+            android:layout_centerVertical="true"
+            android:text="头像" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/image_loading" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:layout_centerVertical="true"
+                android:text="昵称" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNickName"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="小白"
+                android:textColor="@color/font_grey_dark" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <View style="@style/lineSolid" />
+
+        <RelativeLayout
+            android:id="@+id/relSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:layout_centerVertical="true"
+                android:text="性别" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textColor="@color/font_grey_dark"
+                android:id="@+id/tvSex"
+                style="@style/TextViewBody"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="男"
+                 />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <View style="@style/lineSolid" />
+
+        <RelativeLayout
+            android:id="@+id/relAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextViewBody"
+                android:layout_centerVertical="true"
+                android:text="年龄" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/tvAge"
+                style="@style/TextViewBody"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textColor="@color/font_grey_dark" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

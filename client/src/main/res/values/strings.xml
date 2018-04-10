@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">身边够服务端</string>
+    <string name="price">￥%.2f</string>
+    <string name="price1">%.2f元</string>
+    <string name="app_coins">%dS币</string>
+    <string name="order_submit">提交订单</string>
+    <string name="order_name">收 货 人:</string>
+    <string name="phone">手机号码:</string>
+    <string name="province_city_zone">省 市 区:</string>
+    <string name="select">请选择</string>
+    <string name="address_add">新增收货地址</string>
+    <string name="order_info">订单信息</string>
+    <string name="confirm_already">已确认，配货中</string>
+    <string name="pay_type">付款方式：</string>
+    <string name="message_leave">留 言：</string>
+    <string name="order_product">订单商品</string>
+    <string name="order_price_count">订单总额</string>
+    <string name="goods_orders_info">共%1$d件商品&#160;&#160;合计%2$.2f元(含运费￥%3$.2f元)</string>
+    <string name="orders_sender_phone">派送员:%1$s&#160;&#160;电话:%2$s</string>
+    <string name="address_consignee">预约人：%s</string>
+    <string name="address_phone">预约电话：%s</string>
+    <string name="address_detail">预约地址：%s</string>
+    <string name="order_date">下单日期：%s</string>
+    <string name="order_code">订单编号：%s</string>
+    <string name="order_pay_type">付款方式：%s</string>
+    <string name="order_pay_money">支付金额：%s元</string>
+    <string name="order_message_leave">留言：%s</string>
+    <string name="order_time">下单时间：%s</string>
+
+</resources>

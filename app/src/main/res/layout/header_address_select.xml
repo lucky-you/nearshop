@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TextViewBody"
+            android:text="当前定位城市："
+            android:textColor="@color/font_grey" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            style="@style/TextViewBody"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="定位中..."
+            android:textColor="@color/font_red" />
+
+        <TextView
+            android:id="@+id/tvChange"
+            style="@style/TextViewCaption"
+            android:text="切换城市" />
+
+        <ImageView
+            android:id="@+id/ivChange"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_triangle_grey_down" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/areaList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvAreaHint"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="当前城市暂无已加入商区的区县，请切换其他城市"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+    <TextView
+        style="@style/TextViewSubhead"
+        android:layout_margin="10dp"
+        android:text="当前区域"
+        android:textColor="@color/font_grey" />
+
+    <include
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/layoutCurrent"
+        layout="@layout/item_area"
+        android:layout_marginLeft="10dp"
+         />
+
+    <TextView
+        style="@style/TextViewSubhead"
+        android:layout_margin="10dp"
+        android:text="我的常用区域"
+        android:textColor="@color/font_grey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/generalAreaList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        style="@style/TextViewBody"
+        android:layout_margin="10dp"
+        android:text="热门城市推荐"
+        android:textColor="@color/font_red" />
+
+</LinearLayout>

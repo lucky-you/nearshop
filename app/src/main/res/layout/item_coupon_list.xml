@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/rl_coupon_root"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/relContent"
+        android:layout_width="fill_parent"
+        android:layout_height="75.0dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imgEdgeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="75.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_coupon_edge_left_n" />
+
+
+        <RelativeLayout
+            android:id="@+id/relLeft"
+            android:layout_width="126.0dip"
+            android:layout_height="75.0dip">
+
+            <!--<TextView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/btn_check"-->
+                <!--android:layout_width="15.0dip"-->
+                <!--android:layout_height="15.0dip"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="15.0dip"-->
+                <!--android:background="@drawable/cb_circle_big" />-->
+
+            <TextView
+                android:id="@+id/tvPriceTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40.0dip"
+                android:text="￥"
+                android:textColor="#fffa7d46"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tvdenomination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/tvPriceTag"
+                android:text="10.00"
+                android:textColor="#fffa7d46"
+                android:textSize="25.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:background="@color/bg_grey"
+            android:layout_width="1.0px"
+            android:layout_height="65.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/relLeft" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_toRightOf="@+id/line">
+
+            <TextView
+                android:id="@+id/tvCouponPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情趣内衣专场"
+                android:textColor="@color/font_black"
+                android:textSize="13.0sp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tvCouponPrompt"
+                android:id="@+id/tvAreaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情趣内衣专场"
+                android:textColor="#fffa7d46"
+                android:textSize="10.0sp" />
+
+            <TextView
+                android:id="@+id/tvUseCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCouponPrompt"
+                android:layout_marginTop="4.0dip"
+                android:text="满80可用"
+                android:textColor="@color/font_grey_light"
+                android:textSize="10.0sp" />
+
+            <TextView
+                android:id="@+id/tvValidityDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUseCondition"
+                android:layout_marginTop="4.0dip"
+                android:text="有效期:2014.10.31~2015.12.11"
+                android:textColor="@color/font_grey_light"
+                android:textSize="10.0sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvCouponExpired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已过期"
+                android:textColor="@color/font_grey_light"
+                android:textSize="10.0sp"
+                android:layout_above="@+id/tvValidityDate"
+                android:layout_alignRight="@+id/tvCouponPrompt"
+                android:layout_alignEnd="@+id/tvCouponPrompt" />
+        </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/ivDelete"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/btn_delete_select_photo" />-->
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

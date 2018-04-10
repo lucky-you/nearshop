@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:minWidth="100dp"
+        android:id="@+id/tvStoreName"
+        style="@style/TextViewCaption"
+        android:text="前街超市" />
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tvStoreAddress"
+        style="@style/TextViewCaption"
+        android:text="光谷步行街光谷步行街光谷步行街光谷步行街光谷步行街" />
+
+</LinearLayout>

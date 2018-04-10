@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+
+    <com.baishan.nearshopclient.ui.view.DragLayout
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_titlebar">
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_goods_text" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_goods_pic" />
+        </FrameLayout>
+
+    </com.baishan.nearshopclient.ui.view.DragLayout>
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btn_back_top"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="60dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/btn_to_top"-->
+    <!--android:visibility="gone" />-->
+
+
+
+</RelativeLayout>

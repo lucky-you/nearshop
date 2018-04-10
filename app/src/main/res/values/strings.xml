@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">身边够</string>
+    <string name="price">￥%.2f</string>
+    <string name="price1">%.2f元</string>
+    <string name="app_coins">%dS币</string>
+    <string name="leave_message">给我们留言</string>
+    <string name="order_info">订单信息</string>
+    <string name="confirm_already">已确认，配货中</string>
+    <string name="order_date">下单日期：%s</string>
+    <string name="order_code">订单编号：%s</string>
+    <string name="order_pay_type">支付方式：%s</string>
+    <string name="order_pay_money">支付金额：%s元</string>
+    <string name="order_message_leave">留&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;言：%s</string>
+    <string name="order_product">订单商品</string>
+    <string name="order_price_count">订单总额</string>
+    <string name="price_count">总价：</string>
+    <string name="price_send">邮费：</string>
+    <string name="concessions">优惠：</string>
+    <string name="red_packet1">红包：</string>
+    <string name="go_to_pay">去付款</string>
+    <string name="order_cancle">取消订单</string>
+    <string name="order_delete">删除订单</string>
+    <string name="logistics_check">查看物流</string>
+    <string name="orders_pay_desc">您可以和商家议价后，确认工作完成后付款</string>
+    <string name="orders_pay_back">退款金额：￥%s(已退回身边购钱包)</string>
+    <string name="tips_alipay_no">未能在您的手机上找到支付宝</string>
+    <string name="tips_wxpay_no">未能在您的手机上找到微信</string>
+    <string name="address_consignee">收货人：%s</string>
+    <string name="address_phone">收货电话：%s</string>
+    <string name="address_detail">收货地址：%s</string>
+    <string name="send_address">配送地址：%s</string>
+    <string name="order_address">预约地址：%s</string>
+    <string name="orders_state_cancel">取消订单</string>
+    <string name="orders_state_pay">付款</string>
+    <string name="orders_state_refund">申请退款</string>
+    <string name="orders_state_confirm">确认无误</string>
+    <string name="orders_state_receive">确认收货</string>
+    <string name="orders_state_give_refund">放弃退款</string>
+    <string name="goods_orders_info">共%1$d件商品&#160;&#160;合计%2$.2f元(含运费%3$.2f元)</string>
+    <string name="goods_orders_info1">共%1$d件商品&#160;&#160;合计%2$.2f元(无货退款%3$.2f元至钱包)</string>
+    <string name="goods_orders_info2">共%1$d件商品&#160;&#160;合计%2$.2f元(因无货退款%3$.2f元)</string>
+    <string name="orders_sender_phone">派送员：%1$s&#160;&#160;电话 %2$s</string>
+    <string name="contact">联系</string>
+    <string name="orders_success_cancel">取消订单成功</string>
+    <string name="orders_success_refund">申请退款成功</string>
+    <string name="orders_success">操作成功</string>
+    <string name="post_title_hint">标题(至少4个字)</string>
+    <string name="forum_post_review_hinttext">请勿发布违法的内容，会被删除或者禁言喔</string>
+    <string name="emotion_hint">适当使用表情，提升你的逼格</string>
+    <string name="pic_hint">请勿上传非法图片，违者一律封号！</string>
+    <string name="pic_add_hint">只能添加一张图片喔</string>
+    <string name="orders_pay_hint">%1$s支付%2$.2f元,余额支付%3$.2f元</string>
+    <string name="reward_count">%d人打赏</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="deposit">保证金:￥%.2f</string>
+    <string name="orders_auto">将于%s自动确定订单</string>
+
+    <!--对于订单处理的提示    -->
+    <string name="Prompt_01">8小时内不处理，自动确认收货</string>
+    <string name="Prompt_02">16小时内不处理，将无法申请退款</string>
+    <string name="Prompt_03">24小时内不处理，自动确认收货</string>//服务订单
+    <string name="Prompt_04">48小时内不处理，将无法申请退款</string>//服务订单
+
+</resources>

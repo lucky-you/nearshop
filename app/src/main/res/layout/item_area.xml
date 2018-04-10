@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/shape_bg_area"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCityCounty"
+        style="@style/TextViewBody"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/font_grey"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        style="@style/TextViewBody"
+        android:layout_width="100dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="洪福添美萨"
+        android:textColor="@color/font_grey" />
+
+</LinearLayout>

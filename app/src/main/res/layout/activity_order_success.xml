@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginTop="20.0dip">
+
+            <ImageView
+                android:id="@+id/imgSuccessTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/textCodSuccessTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/imgSuccessTip"
+                android:gravity="top"
+                android:text="您已成功付款！"
+                android:textColor="@color/font_black"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/imgCodSuccessLine"
+                style="@style/lineSolid"
+                android:layout_alignLeft="@+id/textCodSuccessTitle"
+                android:layout_below="@+id/textCodSuccessTitle"
+                android:layout_marginTop="14.0dip" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCodSuccessLine"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/shape_dot" />
+
+                    <TextView
+                        android:id="@+id/tv_price_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="付款金额"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥26"
+                        android:textColor="@color/font_red"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/shape_dot" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="17点前订单当日发货，之后订单次日发货"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/shape_dot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="快递单无任何商品信息，隐私发货"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="38.0dip"
+            android:orientation="vertical">
+
+            <!--<Button-->
+            <!--android:id="@+id/btnGotoPay"-->
+            <!--style="@style/btn4"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="44.0dip"-->
+            <!--android:text="@string/pay_now"-->
+            <!--android:visibility="gone" />-->
+
+            <Button
+                android:id="@+id/btnDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/shape_stroke_red"
+                android:text="查看订单详情"
+                android:textColor="@color/font_red" />
+
+            <Button
+                android:id="@+id/btnGotoMain"
+                style="@style/BtnRed"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginTop="16.0dip"
+                android:text="返回超市主页" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

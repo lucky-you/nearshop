@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNavTitle"
+            style="@style/TextViewBody"
+            android:layout_centerInParent="true"
+            android:text="配送区域" />
+
+        <TextView
+            android:id="@+id/tvNavDesc"
+            style="@style/TextViewCaption"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:text="(配送地可能会影响库存，请正确选择)" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvAreaName"
+            style="@style/TextViewBody"
+            android:text=""
+            android:textColor="@color/font_grey" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/TextViewBody"
+            android:layout_below="@+id/tvAreaName"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/font_grey" />
+
+        <!--<ImageView-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/ic_launcher"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextViewBody"
+        android:layout_marginTop="15dp"
+        android:text="备注信息" />
+
+    <EditText
+        android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_stroke_edit"
+        android:gravity="left|top"
+        android:minLines="2" />
+
+    <LinearLayout
+        android:id="@+id/llWorkInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewBody"
+            android:text="工作状态" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWorkState"
+                style="@style/TextViewCaption"
+                android:text="工作进度" />
+
+            <TextView
+                android:id="@+id/crerateOrderTime"
+                style="@style/TextViewCaption"
+                android:layout_marginTop="5dp"
+                android:text="下单时间" />
+
+            <TextView
+                android:id="@+id/tvPayState"
+                style="@style/TextViewCaption"
+                android:layout_marginTop="5dp"
+                android:text="付款状态" />
+
+            <TextView
+                android:id="@+id/tvPayPrice"
+                style="@style/TextViewCaption"
+                android:layout_marginTop="5dp"
+                android:text="实付金额" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

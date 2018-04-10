@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="supermarket_kinds">
+
+        <item>全部</item>
+        <item>全市购</item>
+        <item>水果</item>
+        <item>进口零食</item>
+        <item>饮料</item>
+        <item>牛奶</item>
+    </string-array>
+    <string-array name="report_reason">
+        <item>广告 </item>
+        <item>色情</item>
+        <item>骚扰</item>
+        <item>泄露隐私</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

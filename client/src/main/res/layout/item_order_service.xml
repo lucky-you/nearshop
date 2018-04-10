@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_order_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivPic"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextViewBody"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+
+                android:text="武汉新世界商品" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/TextViewBody"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:text="￥500.00" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCompany"
+            style="@style/TextViewBody"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ivPic"
+            android:text="武汉有限公司"
+            android:textColor="@color/btn_yellow" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_order_service_bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_grey" />
+
+</LinearLayout>

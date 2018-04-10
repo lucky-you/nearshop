@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_detail_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_titlebar"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/llAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvIgnore"
+                style="@style/TextViewBody"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_btn_round_grey"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="忽略此单"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvSend"
+                style="@style/TextViewBody"
+                android:background="@drawable/shape_btn_round_red"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="派送此单"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOperate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvHint"
+                style="@style/TextViewCaption"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="温馨提示：若您不进行操作，订单将在派送员到达后默认确认为您已供货"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/btn_red"
+                android:gravity="center"
+                android:text="我已供货"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

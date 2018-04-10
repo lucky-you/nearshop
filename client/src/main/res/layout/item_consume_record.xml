@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvMoney"
+        style="@style/TextViewCaption"
+        android:text="-30.00" />
+
+    <TextView
+        android:id="@+id/tv_orderNumber"
+        style="@style/TextViewCaption"
+        android:layout_below="@+id/tvMoney"
+        android:layout_marginTop="10dp"
+        android:text="订单编号：2016201520" />
+
+
+    <TextView
+        android:id="@+id/tvLeftMoney"
+        style="@style/TextViewBody"
+        android:layout_alignParentRight="true"
+        android:text="￥200.00"
+        android:textColor="@color/font_red" />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/TextViewCaption"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvMoney"
+        android:layout_marginTop="10dp"
+        android:text="2012-12-05 15:32" />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <CheckBox
+        android:id="@+id/cbGoods"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewBody"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivDelete"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvSpec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="11sp" />
+
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            style="@style/TextViewBody"
+            android:layout_alignParentBottom="true"
+            android:text=""
+            android:textColor="@color/font_red" />
+
+        <RelativeLayout
+            android:id="@+id/countEditLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="28.0dip"
+                android:layout_height="24.0dip"
+                android:background="@drawable/btn_minus" />
+
+            <Button
+                android:id="@+id/tvNum"
+                android:layout_width="34.0dip"
+                android:layout_height="24.0dip"
+                android:layout_toRightOf="@+id/btnMinus"
+                android:background="@drawable/bg_shopcar_count_n"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="1"
+                android:textSize="12.0sp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="28.0dip"
+                android:layout_height="24.0dip"
+                android:layout_toRightOf="@+id/tvNum"
+                android:background="@drawable/btn_add" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.bugtags.library.plugin'
+android {
+
+    compileSdkVersion rootProject.ext.compileVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.sbgoshop.cc"
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+        versionCode 20
+        versionName "1.2.4"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "2MDR3nu2gTAEg71kUG8gq4",
+                GETUI_APP_KEY   : "tbYs9tDdaj750CsJmUGSlA",
+                GETUI_APP_SECRET: "EHiyowv9qi9Lj5azb59fK"
+        ]
+        ndk {
+            abiFilters 'armeabi'//, 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaVersion
+        targetCompatibility rootProject.ext.javaVersion
+    }
+}
+
+greendao {
+    schemaVersion 1
+    targetGenDir 'src/main/java'
+    daoPackage 'com.baishan.nearshopclient.dao'
+}
+bugtags {
+    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+    appKey "bea16a8955923d72285f85143e42ec27"  //这里是你的 appKey
+    appSecret "7463ee53d655a792bc5c2e2092c41375"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
+
+    //网络跟踪功能配置(企业版)
+    trackingNetworkEnabled true
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile project(':mylibrary')
+    compile 'com.getui:sdk:2.9.5.0'
+    compile 'org.greenrobot:greendao:3.1.1'
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'
+}

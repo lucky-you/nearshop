@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvGoodsDesc"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:gravity="right"
+        android:text="@string/goods_orders_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="派送信息"
+            android:textColor="@color/font_black"
+            android:textSize="12sp" />
+
+        <View style="@style/lineSolid" />
+
+        <TextView
+            android:id="@+id/tvConfirmText"
+            android:padding="10dp"
+            style="@style/TextViewCaption"
+            android:text="@string/orders_sender_phone" />
+    </LinearLayout>
+
+
+</LinearLayout>

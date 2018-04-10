@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:text="派送人"
+        style="@style/TextViewBodyGrey" />
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/btn_yellow"
+        android:text=""
+        style="@style/TextViewBodyGrey"  />
+
+</RelativeLayout>

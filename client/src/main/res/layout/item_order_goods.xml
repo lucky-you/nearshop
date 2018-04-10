@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/ivPic"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+    
+    <TextView
+        android:layout_toLeftOf="@+id/tvPrice"
+        android:layout_toRightOf="@+id/ivPic"
+        android:textColor="@color/font_grey"
+        android:text="白云边白云边白云边白云边白云边白云边"
+        style="@style/TextViewBody" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvPrice"
+        android:layout_alignParentRight="true"
+        android:text="￥500.00"
+        style="@style/TextViewBody" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/font_grey"
+        android:text="x10"
+        style="@style/TextViewBody" />
+
+</RelativeLayout>

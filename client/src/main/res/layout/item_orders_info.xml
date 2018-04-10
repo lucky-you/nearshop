@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_orderTime"
+        style="@style/TextViewBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="@string/order_time" />
+
+
+    <TextView
+        android:id="@+id/tvOrderInfo"
+        style="@style/TextViewBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="@string/goods_orders_info" />
+
+    <View style="@style/lineSolid" />
+
+    <LinearLayout
+        android:id="@+id/llOperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCourierInfo"
+            style="@style/TextViewBody"
+            android:layout_marginRight="10dp"
+            android:text="@string/orders_sender_phone"
+            android:textSize="@dimen/txtsize_caption"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            style="@style/BtnWhite"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textSize="@dimen/txtsize_caption"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRight"
+            style="@style/BtnWhite"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:text=""
+            android:textSize="@dimen/txtsize_caption"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_grey" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCourierInfo"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="派送员信息"
+            android:textColor="@color/font_black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tvCourierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:text="姓名："
+            android:textColor="@color/font_grey"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tvCourierPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:text="电话："
+            android:textColor="@color/font_grey"
+            android:textSize="12.0sp" />
+
+
+        <TextView
+            android:id="@+id/tvCourierRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:text="备注："
+            android:textColor="@color/font_grey"
+            android:textSize="12.0sp"
+           />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_grey" />
+</LinearLayout>

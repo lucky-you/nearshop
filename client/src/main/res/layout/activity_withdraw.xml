@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:context="com.baishan.nearshopclient.ui.activity.WithdrawActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TextViewCaption"
+            android:text="当前余额：" />
+
+        <TextView
+            android:id="@+id/tvCurrentMoney"
+            style="@style/TextViewCaption"
+            android:text="8888"
+            android:textColor="@color/btn_yellow" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextViewBody"
+            android:text="提现金额" />
+
+        <EditText
+            android:id="@+id/etMoney"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtsize_body"
+            android:background="@null"
+            android:inputType="number"
+            android:hint="请输入提现金额"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextViewBody"
+            android:text="提现银行" />
+
+        <!--<TextView-->
+            <!--style="@style/TextViewBodyGrey"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="请选择所属银行"-->
+            <!--/>-->
+        <EditText
+            android:id="@+id/etBankName"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtsize_body"
+            android:background="@null"
+            android:hint="请输入提现银行"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextViewBody"
+            android:text="提现账号" />
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtsize_body"
+            android:background="@null"
+            android:hint="请输入银行账号"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextViewBody"
+            android:text="开  户  人" />
+
+        <TextView
+            android:textColor="@color/font_black"
+            android:text=""
+            android:id="@+id/etAccountName"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtsize_body"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextViewBody"
+            android:text="密　　码" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtsize_body"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="提现金额要大于100元"
+        style="@style/TextViewCaption"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="提现"
+        style="@style/BtnRed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tvLog"
+       android:layout_gravity="center_horizontal"
+        android:textColor="@color/btn_yellow"
+        android:layout_margin="10dp"
+        android:text="查看提现记录"
+        style="@style/TextViewBody"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baishan.nearshopclient.ui.view.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="290dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTtitle"
+                style="@style/TextViewBody"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/TextViewBody"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/font_red" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/TextViewTitle"
+                android:text=""
+                android:textColor="@color/font_red" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/TextViewSubhead"
+                    android:text="供货商家信息"
+                    android:textColor="@color/font_grey" />
+
+                <TextView
+                    style="@style/TextViewCaption"
+                    android:layout_marginLeft="10dp"
+                    android:text="您所购买的产品有以下商家提供" />
+            </LinearLayout>
+
+            <View style="@style/lineSolid" />
+
+            <LinearLayout
+                android:id="@+id/llShopList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewSubhead"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="商品介绍"
+            android:textColor="@color/font_grey" />
+
+    </LinearLayout>
+</com.baishan.nearshopclient.ui.view.CustScrollView>
