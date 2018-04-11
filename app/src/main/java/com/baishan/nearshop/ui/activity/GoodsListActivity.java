@@ -72,7 +72,6 @@ public class GoodsListActivity extends BaseMvpActivity<GoodsListPresenter> imple
             startActivity(it);
         });
 
-
         adapter.setOnLoadMoreListener(() -> {
             mvpPresenter.getShopCustomList(categoryId, ++currentPage);
         });

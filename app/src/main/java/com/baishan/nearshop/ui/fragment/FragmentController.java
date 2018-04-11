@@ -47,19 +47,16 @@ public class FragmentController {
     private void initFragment() {
         fragments = new ArrayList<>();
         if (isReload) {
-
             fragments.add(new HomeFragment());
             fragments.add(new SupermarketFragment());
             fragments.add(new EasyOrderFragment());
             fragments.add(new ShopCarFragment());
             fragments.add(new MeFragment());
-
             FragmentTransaction ft = fm.beginTransaction();
             for (int i = 0; i < fragments.size(); i++) {
                 ft.add(containerId, fragments.get(i), "" + i);
             }
             ft.commit();
-
         } else {
             for (int i = 0; i < 5; i++) {
                 fragments.add(fm.findFragmentByTag(i + ""));
