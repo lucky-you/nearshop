@@ -220,20 +220,6 @@ public class UpdateUtils {
     }
 
 
-    private static class NotificationReceiver extends BroadcastReceiver {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent != null) {
-                if (intent.getAction().equals(DOWNLOAD_ACTION)) {
-
-                } else {
-
-                }
-            }
-        }
-    }
-
 
     /***
      * 文件保存及进度回调
@@ -266,7 +252,6 @@ public class UpdateUtils {
                 is = response.byteStream();
                 final long total = response.contentLength();
                 long sum = 0;
-
                 File dir = new File(destFileDir);
                 if (!dir.exists()) {
                     dir.mkdirs();
@@ -279,9 +264,7 @@ public class UpdateUtils {
                     inProgress(sum * 1.0f / total, total);
                 }
                 fos.flush();
-
                 return file;
-
             } finally {
                 try {
                     if (is != null) is.close();

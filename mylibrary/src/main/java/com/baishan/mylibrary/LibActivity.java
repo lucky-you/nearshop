@@ -48,8 +48,7 @@ public abstract class LibActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     protected void onDestroy() {
-        if(EventBus.getDefault().isRegistered(this))
-        {
+        if (EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().unregister(this);
         }
         super.onDestroy();
@@ -119,7 +118,6 @@ public abstract class LibActivity extends AppCompatActivity implements View.OnCl
     public void post(Notice msg) {
         EventBus.getDefault().post(msg);
     }
-
 
 
 }
