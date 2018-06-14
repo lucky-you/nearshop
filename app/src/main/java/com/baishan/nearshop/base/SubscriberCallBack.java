@@ -13,16 +13,17 @@ import java.net.SocketTimeoutException;
 import rx.Subscriber;
 
 /**
- * Created by Administrator
- * on 2016/5/18.
+ * 处理服务器获取的数据
+ *
+ * @param <T>
  */
 public abstract class SubscriberCallBack<T> extends Subscriber<ResultResponse<T>> {
 
     private static Handler mDelivery;
 
     public SubscriberCallBack() {
-        if(mDelivery==null)
-        mDelivery = new Handler(Looper.getMainLooper());
+        if (mDelivery == null)
+            mDelivery = new Handler(Looper.getMainLooper());
     }
 
     @Override
@@ -49,17 +50,14 @@ public abstract class SubscriberCallBack<T> extends Subscriber<ResultResponse<T>
 
     @Override
     public void onNext(ResultResponse response) {
-
         if (response.Code == 200) {
             onSuccess((T) response.Result);
         } else {
-            if (response.Code == 400&& !TextUtils.isEmpty(response.Message)) {
+            if (response.Code == 400 && !TextUtils.isEmpty(response.Message)) {
                 ToastUtils.showToast(response.Message);
             }
             onFailure(response);
         }
-
-
     }
 
     protected abstract void onSuccess(T response);

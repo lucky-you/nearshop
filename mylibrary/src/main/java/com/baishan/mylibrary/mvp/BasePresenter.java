@@ -62,8 +62,8 @@ public class BasePresenter<V> implements Presenter<V> {
     public void addSubscription(Observable observable, Subscriber subscriber) {
         addSubscription(false, observable, subscriber);
     }
-    public void addSubscription(boolean isShowDialog, Observable observable, Subscriber subscriber)
-    {
+
+    public void addSubscription(boolean isShowDialog, Observable observable, Subscriber subscriber) {
         addSubscription(null, isShowDialog, observable, subscriber);
     }
 
