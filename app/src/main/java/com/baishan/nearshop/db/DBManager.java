@@ -72,7 +72,6 @@ public class DBManager {
 
     /**
      * 导入地区数据库
-     *
      * @param context
      */
     public static void copyDB(Context context) {
