@@ -37,14 +37,14 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements IL
         btnLogin = (Button) findViewById(R.id.btnLogin);
         tvRegist = (TextView) findViewById(R.id.tvRegist);
     }
+
     @Subscribe
-    public void onEventMainThread(Notice notice)
-    {
-        if(notice.type== ConstantValue.MSG_TYPE_UPDATE_USER)
-        {
+    public void onEventMainThread(Notice notice) {
+        if (notice.type == ConstantValue.MSG_TYPE_UPDATE_USER) {
             finish();
         }
     }
+
     @Override
     protected void processLogic(Bundle savedInstanceState) {
         initTitle("账户登陆")
@@ -57,12 +57,12 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements IL
     protected void setListener() {
         tvRegist.setOnClickListener(v -> intent2Activity(RegistActivity.class));
         tvForget.setOnClickListener(v -> {
-            Intent intent=new Intent(this,RegistActivity.class);
-            intent.putExtra(ConstantValue.TYPE,RegistActivity.TYPE_FORGET);
+            Intent intent = new Intent(this, RegistActivity.class);
+            intent.putExtra(ConstantValue.TYPE, RegistActivity.TYPE_FORGET);
             startActivity(intent);
         });
-        btnLogin.setOnClickListener(v->{
-            mvpPresenter.login(etPhone.getText().toString(),etPassword.getText().toString());
+        btnLogin.setOnClickListener(v -> {
+            mvpPresenter.login(etPhone.getText().toString(), etPassword.getText().toString());
         });
     }
 
